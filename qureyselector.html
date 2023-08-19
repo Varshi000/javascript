@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>The Document Object</h1>
+<h2>The querySelectorAll() Method</h2>
+<div>A div element</div>
+
+<p>Add a background color all elements with class="example":</p>
+<h1>A H1 element</h1>
+<h2>A H2 element</h2>
+<h3>A H2 element</h3>
+<!--<h2 class="example">A heading</h2>-->
+<p>A paragraph.</p> 
+<p>A p element with a <span style="color:brown;">span</span>element inside</p>
+
+<script>
+const nodeList = document.querySelectorAll("h1,div,p");
+for (let i = 0; i < nodeList.length; i++) {
+  nodeList[i].style.backgroundColor = "red";
+}
+</script>
+
+</body>
+</html>
